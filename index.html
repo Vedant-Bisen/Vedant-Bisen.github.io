@@ -1,25 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Coming Soon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenEd - Coming Soon</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
-            background-color: #f0f0f0;
-            color: #333;
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #4A90E2; /* A nice, clean blue */
+            --background-color: #f5f8fa;
+            --text-color: #333;
+            --heading-color: #2c3e50;
+            --container-bg: #ffffff;
         }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px 20px;
+            background-color: var(--container-bg);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .logo {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .logo span {
+            color: var(--heading-color);
+        }
+        
         h1 {
             font-size: 3em;
+            color: var(--heading-color);
+            margin-top: 0;
+            margin-bottom: 10px;
         }
+
         p {
             font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
+
+        .cta {
+            font-size: 1.1em;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Website Coming Soon!</h1>
-    <p>We're currently working on something awesome. Check back soon for updates!</p>
+
+    <div class="container">
+        <div class="logo">Gen<span>Ed</span></div>
+        <h1>Unlocking the Power of GenAI</h1>
+        <p>GenEd.ai is your go-to platform for GenAI education. We're creating a unique and comprehensive learning experience to help you master the future of artificial intelligence.</p>
+        <p class="cta">Our website is coming soon. Stay tuned for a launch that will change the way you learn.</p>
+    </div>
+
 </body>
 </html>
